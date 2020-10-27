@@ -11,4 +11,4 @@ RUN set -x && \
     cd /npc &&  tar xzf linux_amd64_client.tar.gz &&  rm -rf *.tar.gz &&  rm -rf nps/conf/
 
 
-CMD ["sh", "-c", "/npc/nps/npc -server=$SERVERIP -vkey=$VKEY"]
+CMD ["sh", "-c", "/npc/npc -server=$SERVERIP -vkey=$VKEY"]
