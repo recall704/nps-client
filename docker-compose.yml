@@ -1,0 +1,14 @@
+version: "3"
+services:
+  minio:
+    image: win7/npc-client:v0.26.8
+    container_name: npc-client
+    network_mode: host
+    environment:
+      SERVERIP: "nps.xxoo.com:8024"
+      VKEY: "yourvkey"
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
