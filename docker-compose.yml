@@ -1,6 +1,6 @@
 version: "3"
 services:
-  minio:
+  npc:
     image: win7/npc-client:v0.26.8
     container_name: npc-client
     network_mode: host
